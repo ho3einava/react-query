@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'nunito';
+    src: url(../font/Nunito-VariableFont_wght.ttf);
+}
+.header{
+    display: flex;
+    background-color: #000;
+    width: 100%;
+    height: 65px;
+    color: #FFF;
+    font-family: 'nunito';
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 2rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'nunito';
+}

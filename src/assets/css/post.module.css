@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'nunito';
+    src: url(../font/Nunito-VariableFont_wght.ttf);
+}
+.mainPost{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Post{
+    border: 1px solid gray;
+    width: 80rem;
+    height: auto;
+    height: auto;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    
+
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.postForm{
+    width: 300px;
+    color: #fff;
+    background-color: #343a40;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #000;
+    font-family: "nunito";
+    padding: 2rem 0;
+    position: relative;
+}
+.label{
+    
+    display: flex;
+    justify-content: center;
+    display: flex;
+    background-color: #89b0ae;
+    color: #000;
+    padding: 0.25rem;
+    
+    
+}
+
+.description{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #d8e2dc;
+    padding: 0.5rem;
+    border-radius:5px ;
+    color: #000;
+    
+}
+.list{
+    border: 1px solid #000;
+    padding: 1rem;
+    background-color: #FFF;
+
+}
+.postTitle{
+    position: absolute;
+    top:8px;
+    left: 7.5rem;
+    margin-bottom: 2rem;
+    
+    
+    
+
+    
+}
+.postIcon{
+    position: absolute;
+    left: -100px;
+}
+.delete{
+    position: absolute;
+    left: -87px;
+}
+.view{
+    position: absolute;
+    bottom: 5px;
+    left: 6.80rem;
+}
