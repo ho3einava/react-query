@@ -5,8 +5,8 @@ import PostForm from "./PostForm";
 import useGetPost from "../../hook/useGetPost";
 import Create from "./Create";
 export default function Post() {
-  const {post} = useGetPost()
-  
+  const {result} = useGetPost()
+  const post = result.data
   return (
     <div className="main">
        <div >

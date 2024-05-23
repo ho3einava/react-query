@@ -1,17 +1,57 @@
 {
-    "posts": [
-      { "id": "1", "title": "title1", "description" : "this is title one" ,  "views": 100 },
-      { "id": "2", "title": "title2", "description" : "this is title two", "views": 200 },
-      { "id": "3", "title": "title3", "description" : "this is title three", "views": 150 }
-  
-    ],
-    "comments": [
-      { "id": "1", "text": "a comment about post 1", "postId": "1" },
-      { "id": "2", "text": "another comment about post 1",  "postId": "1" }
-    ],
-    "users": {
-        "id" : 1,
-      "userName": "hossein",
-      "password" : "123"
+  "posts": [
+    {
+      "id": "3",
+      "title": "ali",
+      "description": "234",
+      "price": "456"
+    },
+    {
+      "id": "cd85",
+      "title": "sdlk",
+      "description": "jlkj",
+      "price": "78"
+    },
+    {
+      "id": "9a90",
+      "title": "",
+      "description": "jlkj",
+      "price": "78"
+    },
+    {
+      "id": "1725",
+      "title": "sdlk",
+      "description": "jlkj",
+      "price": "78"
+    },
+    {
+      "id": "1996",
+      "title": "",
+      "description": "jlkj",
+      "price": "78"
+    },
+    {
+      "id": "5ba3",
+      "title": "sdf",
+      "description": "sdf",
+      "price": "0"
     }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "text": "a comment about post 1",
+      "postId": null
+    },
+    {
+      "id": "2",
+      "text": "another comment about post 1",
+      "postId": null
+    }
+  ],
+  "users": {
+    "id": 1,
+    "userName": "hossein",
+    "password": "123"
   }
+}

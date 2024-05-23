@@ -1,9 +1,9 @@
 import React from 'react'
-
-export default function Input() {
+import style from '../../assets/css/createForm.module.css'
+export default function Input({type , name , placeholder , register}) {
   return (
     <div>
-        <input type='text' placeholder='name' />
+        <input className={style.input} {...register(name)} type={type} placeholder={placeholder} name={name} />
     </div>
   )
 }

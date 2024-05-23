@@ -10,15 +10,15 @@ import 'bootstrap/dist/css/bootstrap.css'
 import './assets/css/index.css'
 const root = ReactDOM.createRoot(document.getElementById("root"));
 const client = new QueryClient({
-  defaultOptions : {
-    queries : {
+  // defaultOptions : {
+  //   queries : {
       
-      staleTime : 3000,
-      gcTime : 5000,
-      refetchOnReconnect:true
+  //     staleTime : 3000,
+  //     gcTime : 5000,
+  //     retry : true
 
-    }
-  }
+  //   }
+  // }
 })
 root.render(
   <React.StrictMode>
