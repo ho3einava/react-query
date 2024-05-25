@@ -1,5 +1,5 @@
 import { useMutation, useQueryClient } from '@tanstack/react-query'
-
+import style from '../../assets/css/post.module.css'
 
 import axios from 'axios'
 import React from 'react'
@@ -18,7 +18,10 @@ export default function Delete({id}) {
     })
   return (
     <div>
+       <div className={style.delete}>
         <i onClick={() => mutation.mutate(id)} className="bi bi-trash3"></i>
+        
+        </div> 
     </div>
   )
 }

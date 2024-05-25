@@ -3,6 +3,7 @@ import Header from "./component/Header";
 import Post from "./component/Post/Post";
 import PostId from "./component/Post/PostId";
 import NotFound from "./component/NotFound";
+import Update from "./component/Post/Update";
 import { BrowserRouter , Route , Routes } from "react-router-dom";
 export default function App() {
          
@@ -15,6 +16,8 @@ export default function App() {
         <Route path="/" element={<Index/>} />
         <Route path="/Post" element={<Post/>} />
         <Route path="/Post/:id" element={<PostId/>} />
+        <Route path="/Post/update/" element={<Update/>} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
       </BrowserRouter>

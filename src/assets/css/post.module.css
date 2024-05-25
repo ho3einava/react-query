@@ -89,7 +89,9 @@
 }
 .delete{
     position: absolute;
-    left: -87px;
+    bottom: 5px;
+    left: 17px;
+    cursor: pointer;
 }
 .view{
     position: absolute;
