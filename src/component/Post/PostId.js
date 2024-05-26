@@ -24,15 +24,18 @@ export default function PostId() {
     console.log(error.message)
   }else{
 
-    console.log(data)
+    console.log('')
   }
 
          
   return (
     <div className={style.mainPost}>
     <div className={style.postForm}>
+      <div className={style.item}>
       <Update post = {data} id={{id}} />
        Post:{id}
+      </div>
+      
       <div className={style.description}>Title : {data.title}</div>
       <div className={style.description}>Description: {data.description}</div>
       <div className={style.description}>Price :{data?.price}</div>
