@@ -5,14 +5,16 @@ import axios from 'axios'
 import React from 'react'
 import BASE_URL from '../../hook/BASE_URL'
 export default function Delete({id}) {
+  
      const QueryClient = useQueryClient()
     const mutation = useMutation({
-        mutationKey : ["Delete"] ,
+        mutationKey : ["Delete" , id] ,
         mutationFn : async(id) => {
              await axios.delete(`${BASE_URL}/posts/${id}`)
         },
         onSuccess : () => {
-          return QueryClient.invalidateQueries('Delete')
+          
+          return QueryClient.invalidateQueries({queryKey:['posts']})
         }
 
     })

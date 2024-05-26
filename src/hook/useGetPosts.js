@@ -2,9 +2,9 @@ import axios from 'axios';
 
 import BASE_URL from './BASE_URL';
 import { useQuery } from '@tanstack/react-query';
-export default function useGetPost() {
+export default function useGetPosts() {
     const result = useQuery({
-      queryKey : ["post"] ,
+      queryKey : ["posts"] ,
       queryFn : async () => 
       {
         const res = await axios.get(`${BASE_URL}/posts`)

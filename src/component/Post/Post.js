@@ -2,10 +2,11 @@
 import style from "../../assets/css/post.module.css";
 
 import PostForm from "./PostForm";
-import useGetPost from "../../hook/useGetPost";
+
 import Create from "./Create";
+import useGetPosts from "../../hook/useGetPosts";
 export default function Post() {
-  const {result} = useGetPost()
+  const {result} = useGetPosts()
   const post = result.data
   return (
     <div className="main">

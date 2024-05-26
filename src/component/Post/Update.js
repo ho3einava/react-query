@@ -13,7 +13,7 @@ export default function Update(post) {
   const [inputUpdate, setInputUpdate] = useState();
   const QueryClient = useQueryClient();
   const mutation = useMutation({
-    mutationKey: ["update"],
+    mutationKey: ["update" , post.id.id],
     mutationFn: async () => {
       const res = await axios.put(`${BASE_URL}/posts/${post.id.id}`, {
         title: form.title,
@@ -23,7 +23,7 @@ export default function Update(post) {
       return res.data;
     },
     onSettled: () => {
-      return QueryClient.invalidateQueries("update");
+      return QueryClient.invalidateQueries(post.id.id);
     },
   });
   const onSubmit = (data) => {
@@ -33,15 +33,18 @@ export default function Update(post) {
   };
   return (
     <div>
+      <div className={style.postIcon}>
       <div
-        className={style.postIcon}
+        
         type="button"
-        class="btn btn-dark"
+        className="btn btn-dark"
         data-bs-toggle="modal"
         data-bs-target="#exampleModal2"
       >
         <i className="bi bi-pencil-square "></i>
       </div>
+      </div>
+      
 
       <div
         className="modal fade"

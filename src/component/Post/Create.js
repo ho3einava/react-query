@@ -83,7 +83,7 @@ export default function Create() {
                 />
                 <label>Price: </label>
                 <Input register={register} type={"number"} name={"price"} placeholder={"Price"} />
-                       <button type="submit" className="btn btn-dark" data-bs-dismiss="modal" >submit</button>
+                       <button type="submit" className="btn btn-dark" data-bs-dismiss="modal" >Create</button>
               </form>
             </div>
             

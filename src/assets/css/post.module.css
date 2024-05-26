@@ -60,7 +60,7 @@
     justify-content: start;
     align-items: center; 
     gap : 3rem; 
-    margin-left: 3rem;
+    margin-left: 7.5rem;
 }
 
 .description{
@@ -94,7 +94,8 @@
 }
 .postIcon{
     position: absolute;
-    left: -100px;
+    top: 17px;
+    left: 20px;
 }
 .delete{
     position: absolute;
